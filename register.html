@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <link
+    rel="stylesheet"
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+  />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/register.css" />
+</head>
+<body>
+  <header><a href="/index.html">EV. Con</a></header>
+
+  <form class="container-md" style="margin-top: 64px; margin-bottom: 64px">
+    <!-- - ชื่อบริษัท
+    - ขสนาดบูธ เลือกผ่าน drop down list จาก 10x10 ฟุต หรือ 10x15 ฟุต
+    - Checkbox สาหรับให้เลือกหากต้องการโต๊ะตั้งในบูธ
+    - จานวนเก้าอี้
+    - ชื่อผู้ติดต่อ
+    - เบอร์ผู้ติดต่อ -->
+    <h1 style="text-align: center">Register</h1>
+
+    <div class="form-control">
+      <label>ชื่อบริษัท</label>
+      <input />
+    </div>
+
+    <div class="form-control">
+      <label>ขนาดบูธ</label>
+      <select required>
+        <option>10x10 ft</option>
+        <option>10x15 ft</option>
+      </select>
+    </div>
+
+    <div class="flex-row form-control">
+      <label>ต้องการโต๊ะตั้งในบูธ?</label>
+      <input type="checkbox" />
+    </div>
+
+    <div class="form-control">
+      <label>จำนวนเก้าอี้</label>
+      <input type="number" />
+    </div>
+
+    <div class="form-control">
+      <label>ชื่อผู้ติดต่อ</label>
+      <input type="text" />
+    </div>
+
+    <div class="form-control">
+      <label>เบอร์ผู้ติดต่อ</label>
+      <input type="tel" />
+    </div>
+
+    <div></div>
+    <button type="submit">Submit</button>
+  </form>
+</body>

@@ -1,0 +1,23 @@
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner #register {
+  background-color: #0ea5e9;
+  border-radius: 16px;
+  padding: 8px;
+  color: #f3eeff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.banner #register:hover {
+  background-color: #4caf50;
+  transform: scale(1.05, 1.2);
+}

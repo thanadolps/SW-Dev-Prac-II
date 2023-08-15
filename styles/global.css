@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Roboto&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  background: linear-gradient(90deg, #0e192e 0%, #1a2a4e 100%);
+  color: #b4a3f6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #b4a3f6;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(180deg, rgb(73, 81, 137) 0%, #1a2a4e00 100%);
+  border-bottom: 2px solid rgba(65, 70, 100, 0.503);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  gap: 16px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  color: #f3eeff;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(43, 53, 132, 0.378);
+  cursor: pointer;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-control input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+
+  background-color: transparent;
+  color: #f3eeff;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #8367f3;
+}
+
+.form-control input[type="checkbox"] {
+  width: 1em;
+}
+
+.form-control select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  background-color: transparent;
+  color: #f3eeff;
+  position: relative;
+}
+
+.form-control select:after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 0.5em;
+  color: #ccc;
+  pointer-events: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.container-none {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-sm {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.container-md {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.container-lg {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.container-xl {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container-2xl {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+.m-1 {
+  margin: 1em;
+}
+.m-2 {
+  margin: 2em;
+}
+.m-3 {
+  margin: 3em;
+}
+.m-4 {
+  margin: 4em;
+}
+.m-auto {
+  margin: auto;
+}
