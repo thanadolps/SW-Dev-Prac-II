@@ -11,17 +11,17 @@
 <body>
   <header><a href="/index.html">EV. Con</a></header>
 
-  <form class="container-md">
+  <form class="container-md" onsubmit="validateForm(event)">
     <h1 style="text-align: center">Register</h1>
 
     <div class="form-control">
       <label>ชื่อบริษัท</label>
-      <input />
+      <input type="text" name="name" />
     </div>
 
     <div class="form-control">
       <label>ขนาดบูธ</label>
-      <select required>
+      <select required name="size">
         <option>10x10 ft</option>
         <option>10x15 ft</option>
       </select>
@@ -29,25 +29,27 @@
 
     <div class="flex-row form-control">
       <label>ต้องการโต๊ะตั้งในบูธ?</label>
-      <input type="checkbox" />
+      <input type="checkbox" name="requireTable" />
     </div>
 
     <div class="form-control">
       <label>จำนวนเก้าอี้</label>
-      <input type="number" />
+      <input type="number" name="chairCount" />
     </div>
 
     <div class="form-control">
       <label>ชื่อผู้ติดต่อ</label>
-      <input type="text" />
+      <input type="text" name="contact" />
     </div>
 
     <div class="form-control">
       <label>เบอร์ผู้ติดต่อ</label>
-      <input type="tel" />
+      <input type="tel" name="phone" />
     </div>
 
     <div></div>
     <button type="submit">Submit</button>
   </form>
+
+  <script src="js/register.js"></script>
 </body>
